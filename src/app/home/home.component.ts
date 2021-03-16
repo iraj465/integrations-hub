@@ -1,5 +1,6 @@
 // /<reference types="chrome"/>
 import { Component, OnInit } from '@angular/core';
+import { BatteryManager } from '../interfaces/battery-manager';
 // import {chrome} from '@types/chrome';
 @Component({
   selector: 'app-home',
@@ -12,20 +13,21 @@ export class HomeComponent implements OnInit {
   }
 
   public request_data() {
-  // The ID of the extension we want to talk to.
-  var laserExtensionId = "jgehapfghmkbnbljjbcjfgepkkmihoib";
-  // Make a simple request
-    chrome.runtime.sendMessage(laserExtensionId, {getTargetData: true},
-    function(response) {
-      console.log('Response is ',response)
-      // if (targetInRange(response.targetData))
-      //   chrome.runtime.sendMessage(laserExtensionId, {activateLasers: true});
-    }
-    );
+    // The ID of the extension we want to talk to.
+    var laserExtensionId = "jgehapfghmkbnbljjbcjfgepkkmihoib";
+    // Make a simple request
+      chrome.runtime.sendMessage(laserExtensionId, {getBatteryData: true, getCpuData: false, getMemoryData: false},
+      function(response) {
+        console.log('Response is ',response)
+        // if (targetInRange(response.targetData))
+        //   chrome.runtime.sendMessage(laserExtensionId, {activateLasers: true});
+      }
+      );
   }
 
   ngOnInit() {
-    setInterval(this.request_data, 30000);
+    setInterval(() => {
+      this.request_data
+    }, 3000);
   }
-
 }

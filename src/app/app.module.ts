@@ -10,6 +10,9 @@ import { SystemModule } from './system/system.module';
 import { BatteryComponent } from './components/battery/battery.component';
 import { HomeComponent } from './home/home.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MaterialModule } from './material-module';
+import { IconsModule } from './icons/icons.module';
+import { ChartsModule } from 'ng2-charts';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,8 +23,11 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     SystemModule,
+    MaterialModule,
     BrowserAnimationsModule,
     CommonModule,
+    IconsModule,
+    ChartsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],

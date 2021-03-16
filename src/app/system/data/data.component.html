@@ -1,1 +1,18 @@
-<p>data works!</p>
+<mat-toolbar color="primary" class="pl-md-5 justify-content-between flare-dark-theme mat-app-background">
+    <span>System data</span>
+  </mat-toolbar>
+  
+  <section class="pl-3 p-2">
+    <div class="row align-items-center justify-content-center m-5">
+
+        <nav mat-tab-nav-bar>
+          <a mat-tab-link *ngFor="let link of links" (click)="activeLink = link" [active]="activeLink == link"
+            [routerLink]="link.href">
+            {{link.name}} </a>
+        </nav>
+    </div>
+    <div class="col-md-12 d-flex flex-column justify-content-center align-items-center">
+      <router-outlet></router-outlet>
+    </div>
+    
+  </section>

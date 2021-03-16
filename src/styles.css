@@ -1,2 +1,228 @@
 /* You can add global styles to this file, and also import other style files */
 /* @import "~bootstrap/dits/css/bootstrap.css"; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Montserrat:wght@300;400;500;600;700;800&family=Titillium+Web:wght@200;300;400;600;700&display=swap');
+html, body { height: 100%; }
+:root{
+  --cyan:#18ffff;
+  --teal:#009688;
+  --green:#27AE60;
+  --blue: #4A5EC9;
+  --red: #B1322A;
+  --orange: #F2994A;
+}
+.flare-dark-theme{
+  --blue: #00BCD4;
+
+}
+
+body {
+   margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+   height:100vh;
+  }
+
+body, h1, h2,h3,h4,h5,h6, p, span{
+  font-family:Inter, 'Helvetica Neue', sans-serif;
+}
+a{
+  text-decoration: none!important;
+  color:var(--blue);
+}
+.flare-dark-theme a{
+  color:var(--cyan);
+}
+.flare-dark-theme .table{
+  color: #fff;
+  /* background-color: #343a40; */
+}
+.flare-dark-theme .text-muted{
+  color:#BDBDBD!important;
+}
+td.mat-cell{
+  padding-right:5px!important;
+}
+th.mat-header-cell{
+  padding-right:5px!important;
+}
+.bg-primary{
+  background-color: #3F51B5!important;
+  color:#ffffff;
+}
+.h-100 {
+  min-height: 100vh!important;
+  height: inherit!important;
+}
+
+@media (min-width: 768px) {
+  .h-md-100 { min-height: 100vh; }
+}
+
+.avatar{
+  border-radius:50%;
+}
+.bg-extra-dark{
+  background-color: #30343F;
+}
+
+.mat-stroked-button:not([disabled]){
+  border-color: rgba(75,95,203, 1);
+  background-color:#ffffff;
+}
+.mat-raised-button.btn-lg{
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: .3rem;
+  width: 226px;
+  height: 57px;
+  border: 3px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+}
+
+.mat-raised-button.btn-lg i-feather{
+  margin-top:-10px;
+}
+
+ngx-mat-file-input input{
+  display: none !important;
+}
+
+button:focus{
+  outline:0px dotted!important;
+}
+
+.mat-checkbox-label { white-space: normal !important; }
+
+.pre-wrap{
+  white-space: pre-wrap;
+}
+.mat-checkbox-disabled.mat-checkbox-checked .mat-checkbox-background{
+  background-color:var(--teal);
+}
+
+.flare-dark-theme .mat-checkbox-disabled.mat-checkbox-checked .mat-checkbox-background{
+  background-color:var(--teal);
+}
+
+/* feather icon inside button */
+.mat-button .mat-button-wrapper i-feather, .mat-stroked-button .mat-button-wrapper i-feather, .mat-raised-button .mat-button-wrapper i-feather{
+  width: 1rem;
+  height: 1rem;
+  margin-top: -24px;
+  margin-right: 5px;
+}
+
+/* mat icon inside button */
+.mat-button .mat-button-wrapper mat-icon{
+  width: 1rem;
+  height: 1rem;
+  font-size: 1rem;
+  margin-right: 5px;
+  margin-top: -2px;
+}
+
+/* feather icon inside mat-icon-button */
+.mat-icon-button .mat-button-wrapper i-feather{
+  margin-top:-20px;
+}
+
+/* status indicators */
+.indicator-sm{
+  border-radius: 4px;
+  padding:3px 10px;
+  font-size:12px;
+  font-weight: bold;
+}
+.indicator-lg{
+  border-radius: 4px;
+  padding:3px 10px;
+  font-size:1rem;
+  font-weight: bold;
+}
+.indicator i-feather{
+  width:15px!important;
+  height:15px!important;
+}
+.indicator-primary{
+  background: #3f51b51C;
+  color: var(--blue);
+}
+.indicator-warn{
+  background: #F2994A1C;
+  color: var(--orange);
+}
+
+.indicator-danger{
+  background: #B1322A1C;
+  color:var(--red);
+}
+
+.indicator-success{
+  background: #27AE601C;
+  color:var(--green);
+}
+
+.flare-dark.theme .indicator-inactive{
+  background: #FFFFFF1C;
+  color:#FFFFFF;
+}
+
+.indicator-inactive{
+  background: #6c757de3;
+  color:#FFFFFF;
+}
+
+
+
+/* Cool looking button effect */
+.effect01:enabled {
+  color: #FFF;
+  border: 4px solid #000;
+  box-shadow:0px 0px 0px 1px #000 inset;
+  background-color: #000;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.effect01:enabled:hover {
+  border: 4px solid #666;
+  background-color: #FFF;
+  box-shadow:0px 0px 0px 4px #EEE inset;
+}
+
+/*btn_text*/
+.effect01:enabled span {
+  transition: all 0.2s ease-out;
+  z-index: 2;
+}
+.effect01:enabled:hover span{
+  letter-spacing: 0.13em;
+  color: #333;
+}
+
+/*highlight*/
+.effect01:enabled:after {
+  background: #FFF;
+  border: 0px solid #000;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: .8;
+  position: absolute;
+  top: -50px;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+  width: 50px;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);/*easeOutCirc*/
+  z-index: 1;
+}
+.effect01:enabled:hover:after {
+  background: #FFF;
+  border: 20px solid #000;
+  opacity: 0;
+  left: 120%;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+}

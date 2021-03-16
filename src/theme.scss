@@ -1,0 +1,47 @@
+@import '~@angular/material/theming';
+
+// Define a custom typography config that overrides the font-family as well as the
+// `headlines` and `body-1` levels.
+$inter-typography: mat-typography-config(
+  $font-family: 'Inter, sans-serif',
+);
+
+// Override typography CSS classes (e.g., mat-h1, mat-display-1, mat-typography, etc.).
+@include mat-base-typography($inter-typography);
+
+// Override typography for all Angular Material, including mat-base-typography and all components.
+@include angular-material-typography($inter-typography);
+
+// Override the typography in the core CSS.
+@include mat-core($inter-typography);
+
+// Define the default theme (same as the example above).
+$flare-app-primary: mat-palette($mat-indigo);
+$flare-app-accent:  mat-palette($mat-teal);
+$flare-app-warn:  mat-palette($mat-pink);
+$flare-app-theme:   mat-light-theme($flare-app-primary, $flare-app-accent, $flare-app-warn);
+
+// Include the default theme styles.
+@include angular-material-theme($flare-app-theme);
+
+
+// Define a dark theme.
+$dark-primary: mat-palette($mat-indigo);
+$dark-accent:  mat-palette($mat-cyan);
+$dark-theme:   mat-dark-theme($dark-primary, $dark-accent, $flare-app-warn);
+
+// Define an alternate dark theme.
+$sudo-primary: mat-palette($mat-green);
+$sudo-accent:  mat-palette($mat-red);
+$sudo-theme:   mat-dark-theme($sudo-primary, $sudo-accent);
+
+// Include the alternative theme styles inside of a block with a CSS class. You can make this
+// CSS class whatever you want. In this example, any component inside of an element with
+// `.flare-dark-theme` will be affected by this alternate dark theme instead of the default theme.
+.flare-dark-theme {
+  @include angular-material-theme($dark-theme);
+}
+
+.flare-sudo-theme {
+  @include angular-material-theme($sudo-theme);
+}
