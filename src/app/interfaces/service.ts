@@ -5,7 +5,7 @@ export interface Service {
     version:string;
     supportedKeptnVersion:string;
     repoURL:string;
-    stars:string;
+    stars:number;
     description:string;
 }
 

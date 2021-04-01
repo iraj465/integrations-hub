@@ -2,9 +2,15 @@
   <div class="col-md-12">
     <mat-card class="upload-card">
       <mat-card-header>
-        <mat-card-title class="card-title">{{service.name}}</mat-card-title>
-      </mat-card-header>
+        <mat-card-title class="card-title">
+          <i-feather name="box"></i-feather>
+          {{service.name}}
+        </mat-card-title>
+      </mat-card-header>	
       <mat-card-content class="d-flex flex-column align-items-center">
+        <div class="row">
+          <i-feather name="star" style="color: #FFD700;"></i-feather><span class="pt-1">{{service.stars}}</span>
+        </div> 
         <img src="assets/images/big-shoes-torso.svg" height="80" alt="">
         <p>Let's get your resume uploaded.</p>
         <p class="pb-2">You can't apply for jobs without a resume</p>
