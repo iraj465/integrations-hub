@@ -1,0 +1,35 @@
+<nav class="navbar bg-primary h-md-100 d-flex flex-row flex-md-column justify-content-md-between align-items-stretch">
+    <div class="mt-md-3 d-none d-md-block d-md-flex justify-content-center">
+      <img width="50" alt="IITB Logo" src="assets/keptn.png" />
+    </div>
+    <ul class="navbar-nav mx-auto d-flex flex-row flex-md-column align-items-md-center align-items-stretch">
+      <li class="nav-item flex-fill d-flex align-items-center justify-content-center ">
+        <a class="nav-link d-flex flex-column justify-content-center align-items-center" routerLink="integrations/dashboard">
+            <i-feather name="home" style="color: white;"></i-feather>
+          <span class="desc" style="color: white;">Home</span>
+        </a>
+      </li>
+      <li class="nav-item flex-fill d-flex align-items-center justify-content-center ">
+        <a class="nav-link d-flex flex-column justify-content-center align-items-center" href="https://keptn.sh/community/" target="_blank">
+            <i-feather name="layers" style="color: white;"></i-feather>
+          <span class="desc" style="color: white;">Community</span>
+        </a>
+      </li>
+    </ul>
+    <div class="bg-extra-dark align-self-stretch d-flex justify-content-center align-items-center">
+      <button mat-button  id="profile-btn">
+  
+      </button>
+      <mat-menu #menu="matMenu" xPosition="after">
+        <button mat-menu-item>
+          <i-feather name="log-out" style="color:red;"></i-feather> Logout
+        </button>
+        <button mat-menu-item>
+          <i-feather name="refresh-ccw" style="color:#F2994A;"></i-feather> Switch to coordinator
+        </button>
+        <button mat-menu-item>
+          <i-feather name="user-check"></i-feather> Login as coordinator
+        </button>
+      </mat-menu>
+    </div>
+  </nav>
