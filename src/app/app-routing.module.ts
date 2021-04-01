@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {
     path: 'system',
-    loadChildren: () => import('./system/system.module').then(m => m.SystemModule)
+    loadChildren: () => import('./integrations/integrations.module').then(m => m.IntegrationsModule)
   },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];

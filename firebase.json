@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/chromium-diagnostics-app",
+    "public": "dist/integrations-hub",
     "ignore": [
       "firebase.json",
       "**/.*",

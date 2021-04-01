@@ -6,23 +6,21 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { CommonModule } from '@angular/common';
-import { SystemModule } from './system/system.module';
-import { BatteryComponent } from './components/battery/battery.component';
 import { HomeComponent } from './home/home.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule } from './material-module';
 import { IconsModule } from './icons/icons.module';
 import { ChartsModule } from 'ng2-charts';
+import { IntegrationsModule } from './integrations/integrations.module';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    BatteryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SystemModule,
+    IntegrationsModule,
     MaterialModule,
     BrowserAnimationsModule,
     CommonModule,
