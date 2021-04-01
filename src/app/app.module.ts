@@ -10,7 +10,6 @@ import { HomeComponent } from './home/home.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule } from './material-module';
 import { IconsModule } from './icons/icons.module';
-import { ChartsModule } from 'ng2-charts';
 import { IntegrationsModule } from './integrations/integrations.module';
 @NgModule({
   declarations: [
@@ -25,7 +24,6 @@ import { IntegrationsModule } from './integrations/integrations.module';
     BrowserAnimationsModule,
     CommonModule,
     IconsModule,
-    ChartsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],

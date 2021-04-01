@@ -8,7 +8,7 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'system',
+    path: 'integrations',
     loadChildren: () => import('./integrations/integrations.module').then(m => m.IntegrationsModule)
   },
   { path: '**', redirectTo: '', pathMatch: 'full' },

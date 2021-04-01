@@ -1,7 +1,7 @@
 export interface Service {
     id:number;
     name:string;
-    status: Status;
+    status: string;
     version:string;
     supportedKeptnVersion:string;
     repoURL:string;

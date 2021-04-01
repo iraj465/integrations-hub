@@ -1,13 +1,22 @@
 [
-{
-    "id":1,
-    "name":"Dynatrace service",
-    "status": "stable",
-    "version": "0.12.0",
-    "supportedKeptnVersion":"0.8.1",
-    "repoURL":"https://github.com/keptn-contrib/dynatrace-service",
-    "stars":"6",
-    "description":"The dynatrace-service is a Keptn-service that forwards Keptn events - occurring during a delivery workflow - to Dynatrace. In addition, the service is responsible for configuring your Dynatrace tenant to fully interact with the Keptn installation."
-}
-
+    {
+        "id":1,
+        "name":"Dynatrace service",
+        "status": "stable",
+        "version": "0.12.0",
+        "supportedKeptnVersion":"0.8.1",
+        "repoURL":"https://github.com/keptn-contrib/dynatrace-service",
+        "stars":"6",
+        "description":"The dynatrace-service is a Keptn-service that forwards Keptn events - occurring during a delivery workflow - to Dynatrace. In addition, the service is responsible for configuring your Dynatrace tenant to fully interact with the Keptn installation."
+    },
+    {
+        "id":1,
+        "name":"Dynatrace service2",
+        "status": "stable",
+        "version": "0.12.0",
+        "supportedKeptnVersion":"0.8.1",
+        "repoURL":"https://github.com/keptn-contrib/dynatrace-service",
+        "stars":"6",
+        "description":"The dynatrace-service is a Keptn-service that forwards Keptn events - occurring during a delivery workflow - to Dynatrace. In addition, the service is responsible for configuring your Dynatrace tenant to fully interact with the Keptn installation."
+    }
 ]
