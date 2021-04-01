@@ -16,5 +16,6 @@ export class DataComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
 
 }

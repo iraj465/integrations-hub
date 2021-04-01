@@ -8,7 +8,7 @@
 
 .split-left{
   /* background-color:#3F51B5; */
-  background-image: url("src/assets/metrics_home.svg");
+  background-image: url("src/assets/home.svg");
   background-position: left center;
   background-repeat:no-repeat;
   background-size: contain;
@@ -23,6 +23,27 @@
   font-weight: bold;
   font-size: 2rem;
   line-height: 2rem;
+}
+
+.opening-message{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+  line-height: 2rem;
+}
+
+.opening-info{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  line-height: 2rem;
+}
+
+.size {
+  height: 64px;
+  width: 64px;
 }
 
 #tag-title{
