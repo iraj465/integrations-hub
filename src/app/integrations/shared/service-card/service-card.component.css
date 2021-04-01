@@ -1,31 +1,77 @@
-mat-card-title{
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: 500;
-    font-size: x-large;
-    color: white;
-  }
+.container{
+  width:100%;
+  margin-top: 60px;
+}
+.view {
+  border-radius: 50px;
+}
 
-  /* .bg-c-blue {
-    background-color: #1D2340;
-    background-image: linear-gradient(315deg, #3445A4 0%, #1D2340 74%);
-} */
-.card{
-    border-radius: 10px;
-    -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
-    box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
-    border: none;
-    margin-bottom: 30px;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #1D2340;
-    background-image: linear-gradient(315deg, #3445A4 0%, #1D2340 74%);
+#carousel-congrats {
+  border-radius: 15px;
 }
-#job{
-        /* background-image: url("src\assets\images\card.svg"); */
-        background-repeat:no-repeat ;
-        /* background-size:50%; */
-      
+
+h1{
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
 }
-span,i{
-  color: white;
+h1.applicant-name{
+  color:#4A5EC9;
 }
+.useful-links a{
+  text-decoration: none;
+  margin:8px 5px;
+  font-family: Inter, sans-serif;
+  font-weight: 500 ;
+  font-size: 16px;
+  color:#000000;
+}
+.useful-links a i-feather{
+  width:20px;
+  height: 20px;
+  margin: 0 10px;
+  color:#1F28CF;
+}
+
+.btn-block{
+  width:70%;
+}
+
+.payment-status-1{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 117.1%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #949494;
+}
+
+.payment-status-2{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 117.1%;
+  display: flex;
+  align-items: center;
+  color: #4F4F4F;
+}
+
+#carousel{
+  border-radius: 10px;
+}
+
+ul>li{
+  list-style-type: none;
+  font-weight:600;
+}
+ul{
+  padding-left:0;
+}
+
+mat-card::ng-deep.mat-card-header-text {
+  font-family: Inter;
+  font-size: 14px;
+}
+
+p { margin:0 }

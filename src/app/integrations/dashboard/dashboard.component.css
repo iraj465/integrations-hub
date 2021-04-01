@@ -1,77 +1,10 @@
-.container{
-    width:100%;
-    margin-top: 60px;
+.fab-container{
+  position: fixed;
+  bottom:2rem;
+  right:2rem;
+}
+@media (max-width: 768px){
+  .fab-container{
+    bottom:5rem;
   }
-  .view {
-    border-radius: 50px;
-  }
-  
-  #carousel-congrats {
-    border-radius: 15px;
-  }
-  
-  h1{
-    font-family: 'Inter', sans-serif;
-    font-size: 32px;
-    font-weight: 600;
-  }
-  h1.applicant-name{
-    color:#4A5EC9;
-  }
-  .useful-links a{
-    text-decoration: none;
-    margin:8px 5px;
-    font-family: Inter, sans-serif;
-    font-weight: 500 ;
-    font-size: 16px;
-    color:#000000;
-  }
-  .useful-links a i-feather{
-    width:20px;
-    height: 20px;
-    margin: 0 10px;
-    color:#1F28CF;
-  }
-  
-  .btn-block{
-    width:70%;
-  }
-  
-  .payment-status-1{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 117.1%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #949494;
-  }
-  
-  .payment-status-2{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 117.1%;
-    display: flex;
-    align-items: center;
-    color: #4F4F4F;
-  }
-  
-  #carousel{
-    border-radius: 10px;
-  }
-  
-  ul>li{
-    list-style-type: none;
-    font-weight:600;
-  }
-  ul{
-    padding-left:0;
-  }
-  
-  mat-card::ng-deep.mat-card-header-text {
-    font-family: Inter;
-    font-size: 14px;
-  }
-  
-  p { margin:0 }
+}

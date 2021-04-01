@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as integrations_json from 'data/integrations.json'
 import { Service } from 'src/app/interfaces/service';
-// import { map } from 'rxjs/operators';
+import { IntegrationsJsonService } from 'src/app/services/integrations-json.service';
 
 @Component({
   selector: 'app-keptn-services',
@@ -9,12 +8,13 @@ import { Service } from 'src/app/interfaces/service';
   styleUrls: ['./keptn-services.component.css']
 })
 export class KeptnServicesComponent implements OnInit {
-  integrations: Service[] = (integrations_json  as  any).default as Service[];
-  constructor() { }
+  integrations: Service[] = [];
+  constructor(
+    private jsonService: IntegrationsJsonService
+  ) { }
 
   ngOnInit(): void {
-    console.log(this.integrations[0])
-
+    this.integrations = this.jsonService.get_integrations_json()
   }
 
 }
