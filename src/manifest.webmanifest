@@ -1,6 +1,6 @@
 {
-  "name": "chromium-diagnostics-app",
-  "short_name": "chromium-diagnostics-app",
+  "name": "integrations-hub",
+  "short_name": "integrations-hub",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
