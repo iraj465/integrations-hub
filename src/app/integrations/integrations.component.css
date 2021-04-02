@@ -1,0 +1,9 @@
+@media (min-width: 768px) {
+    .main-content{
+      margin-left:50px;
+    }
+  }
+  .main-content{
+    width:100%;
+  }
+  
