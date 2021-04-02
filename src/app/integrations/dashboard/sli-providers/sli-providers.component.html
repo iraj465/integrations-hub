@@ -1,1 +1,7 @@
-<p>sli-providers works!</p>
+<section class="container p-2 mb-5 pb-5">
+    <div class="row">
+      <div *ngFor="let service of integrations" class="col-md-6">
+        <app-service-card [service]="service"></app-service-card> 
+      </div>
+    </div>
+  </section>

@@ -1,4 +1,4 @@
-<div class="row pt-2">
+<div class="row pb-4">
   <div class="col-md-12">
     <mat-card class="upload-card">
       <mat-card-header>
@@ -11,10 +11,13 @@
         <div class="row">
           <i-feather name="star" style="color: #FFD700;"></i-feather><span class="pt-1">{{service.stars}}</span>
         </div> 
-        <img src="assets/images/big-shoes-torso.svg" height="80" alt="">
-        <p>Let's get your resume uploaded.</p>
-        <p class="pb-2">You can't apply for jobs without a resume</p>
-        <button mat-raised-button color="primary" [routerLink]="'/applicant/resume'">Upload resume</button>
+        <div class="row pt-2 pb-4">
+          <i-feather name="clipboard" style="color: #6C63FF;"></i-feather>
+          <p>Status:</p> <b>{{service.status}}</b>
+        </div> 
+        <a mat-raised-button color="primary" [href]="service.installInstructions" target="_blank">Install instructions
+          <i-feather name="arrow-down-circle" style="color:white;"></i-feather>
+        </a>
       </mat-card-content>
     </mat-card>
   </div>

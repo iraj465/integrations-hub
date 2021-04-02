@@ -1,14 +1,20 @@
 export interface Service {
     id:number;
     name:string;
-    status: string;
+    status: Status;
     version:string;
-    supportedKeptnVersion:string;
+    keptnVersion:string;
     repoURL:string;
     stars:number;
+    type: ServiceType;
     description:string;
+    installInstructions:string;
 }
 
+export enum ServiceType {
+    SERVICE = "service",
+    SLI = "sli"
+}
 export enum Status {
     STABLE = "stable",          /* The project has reached a stable, usable state and is being actively developed. */
     WIP = "wip",                /* Initial development is in progress, but there has not yet been a stable, usable release suitable for the public. */
