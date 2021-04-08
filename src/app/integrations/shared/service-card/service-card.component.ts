@@ -1,5 +1,6 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { Service } from 'src/app/interfaces/service';
+import { GithubService } from 'src/app/services/github.service';
 
 @Component({
   selector: 'app-service-card',
@@ -10,10 +11,15 @@ export class ServiceCardComponent implements OnChanges {
 
   @Input()
   service!: Service;
-  constructor() { }
+  stars:number = 0;
+  constructor(
+    private gitHubService: GithubService
+  ) {}
 
   ngOnChanges(changes: SimpleChanges) {
     this.service = changes.service.currentValue;   // fetch the current value
-}
+    this.gitHubService.getNumberRepoStars(this.service.name)
+    .then(numStars => this.stars = numStars)
+  }
 
 }

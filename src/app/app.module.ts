@@ -11,6 +11,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule } from './material-module';
 import { IconsModule } from './icons/icons.module';
 import { IntegrationsModule } from './integrations/integrations.module';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,7 @@ import { IntegrationsModule } from './integrations/integrations.module';
     AppRoutingModule,
     IntegrationsModule,
     MaterialModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     CommonModule,
     IconsModule,

@@ -1,11 +1,10 @@
 export interface Service {
     id:number;
     name:string;
-    status: string;
+    status: Status;
     version:string;
     keptnVersion:string;
     repoURL:string;
-    stars:number;
     type: ServiceType;
     description:string;
     installInstructions:string;
