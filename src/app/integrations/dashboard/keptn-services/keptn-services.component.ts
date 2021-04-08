@@ -13,7 +13,7 @@ export class KeptnServicesComponent implements OnInit {
     private jsonService: IntegrationsJsonService
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.integrations = this.jsonService.get_integrations_json().filter(integration => integration.type == "keptn-service");
   }
 
