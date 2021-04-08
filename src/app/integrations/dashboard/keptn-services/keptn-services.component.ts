@@ -14,7 +14,7 @@ export class KeptnServicesComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.integrations = this.jsonService.get_integrations_json().filter(integration => integration.type == "service");
+    this.integrations = this.jsonService.get_integrations_json().filter(integration => integration.type == "keptn-service");
   }
 
 }

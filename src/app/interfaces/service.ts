@@ -11,8 +11,8 @@ export interface Service {
 }
 
 export enum ServiceType {
-    SERVICE = "service",
-    SLI = "sli"
+    SERVICE = "keptn-service",
+    SLI = "sli-provider"
 }
 export enum Status {
     STABLE = "stable",          /* The project has reached a stable, usable state and is being actively developed. */

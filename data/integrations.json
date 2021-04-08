@@ -6,7 +6,7 @@
         "version": "0.12.0",
         "keptnVersion":"0.8.1",
         "repoURL":"https://github.com/keptn-contrib/dynatrace-service",
-        "type": "service",
+        "type": "keptn-service",
         "description":"The dynatrace-service is a Keptn-service that forwards Keptn events - occurring during a delivery workflow - to Dynatrace. In addition, the service is responsible for configuring your Dynatrace tenant to fully interact with the Keptn installation.",
         "installInstructions":"https://github.com/keptn-contrib/dynatrace-service#installation"
     },
@@ -17,7 +17,7 @@
         "version": "0.1.2",
         "keptnVersion":"0.8.1",
         "repoURL":"https://github.com/keptn-contrib/argo-service",
-        "type": "service",
+        "type": "keptn-service",
         "description":"The dynatrace-service is a Keptn-service that forwards Keptn events - occurring during a delivery workflow - to Dynatrace. In addition, the service is responsible for configuring your Dynatrace tenant to fully interact with the Keptn installation.",
         "installInstructions":"https://github.com/keptn-contrib/argo-service#argo-rollout-support-explained"
     },
@@ -28,7 +28,7 @@
         "version": "0.6.0",
         "keptnVersion":"0.6.0",
         "repoURL":"https://github.com/keptn-contrib/neoload-service",
-        "type": "service",
+        "type": "keptn-service",
         "description":"The dynatrace-service is a Keptn-service that forwards Keptn events - occurring during a delivery workflow - to Dynatrace. In addition, the service is responsible for configuring your Dynatrace tenant to fully interact with the Keptn installation.",
         "installInstructions":"https://github.com/keptn-contrib/neoload-service#install-service-"
     },
@@ -39,7 +39,7 @@
         "version": "0.4.0",
         "keptnVersion":"0.8.1",
         "repoURL":"https://github.com/keptn-contrib/prometheus-service",
-        "type": "service",
+        "type": "keptn-service",
         "description":"The dynatrace-service is a Keptn-service that forwards Keptn events - occurring during a delivery workflow - to Dynatrace. In addition, the service is responsible for configuring your Dynatrace tenant to fully interact with the Keptn installation.",
         "installInstructions":"https://github.com/keptn-contrib/prometheus-service#installation"
     },
@@ -50,7 +50,7 @@
         "version": "0.9.0",
         "keptnVersion":"0.8.1",
         "repoURL":"https://github.com/keptn-contrib/dynatrace-sli-service",
-        "type": "sli",
+        "type": "sli-provider",
         "description":"The dynatrace-service is a Keptn-service that forwards Keptn events - occurring during a delivery workflow - to Dynatrace. In addition, the service is responsible for configuring your Dynatrace tenant to fully interact with the Keptn installation.",
         "installInstructions":"https://github.com/keptn-contrib/dynatrace-sli-service#installation"
     },
@@ -61,7 +61,7 @@
         "version": "0.6.0",
         "keptnVersion":"0.6.0",
         "repoURL":"https://github.com/keptn-contrib/neoload-sli-provider",
-        "type": "sli",
+        "type": "sli-provider",
         "description":"The dynatrace-service is a Keptn-service that forwards Keptn events - occurring during a delivery workflow - to Dynatrace. In addition, the service is responsible for configuring your Dynatrace tenant to fully interact with the Keptn installation.",
         "installInstructions":"https://github.com/keptn-contrib/neoload-sli-provider#install-service-"
     },
@@ -72,7 +72,7 @@
         "version": "0.3.0",
         "keptnVersion":"0.8.1",
         "repoURL":"https://github.com/keptn-contrib/prometheus-sli-service",
-        "type": "sli",
+        "type": "sli-provider",
         "description":"The dynatrace-service is a Keptn-service that forwards Keptn events - occurring during a delivery workflow - to Dynatrace. In addition, the service is responsible for configuring your Dynatrace tenant to fully interact with the Keptn installation.",
         "installInstructions":"https://github.com/keptn-contrib/prometheus-sli-service#basic-usage"
     }

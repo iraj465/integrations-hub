@@ -14,7 +14,7 @@ export class SliProvidersComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.integrations = this.jsonService.get_integrations_json().filter(integration => integration.type == "sli");
+    this.integrations = this.jsonService.get_integrations_json().filter(integration => integration.type == "sli-provider");
   }
 
 }
