@@ -18,5 +18,5 @@ npm run start-pwa
 ### Integrations
 
 Some mock integrations data in provided in [`data/integrations.json`](https://github.com/iraj465/integrations-hub/blob/master/data/integrations.json).
-Integrations are defined with `Service` interface defined [here](https://github.com/iraj465/integrations-hub/blob/master/src/app/interfaces/service.ts).
+Integrations are defined with `Integration` interface defined [here](https://github.com/iraj465/integrations-hub/blob/master/src/app/interfaces/service.ts).
 

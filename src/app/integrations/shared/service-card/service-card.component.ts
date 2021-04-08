@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
-import { Service } from 'src/app/interfaces/service';
+import { Integration } from 'src/app/interfaces/service';
 import { GithubService } from 'src/app/services/github.service';
 
 @Component({
@@ -10,7 +10,7 @@ import { GithubService } from 'src/app/services/github.service';
 export class ServiceCardComponent implements OnChanges {
 
   @Input()
-  service!: Service;
+  service!: Integration;
   stars:number = 0;
   constructor(
     private gitHubService: GithubService

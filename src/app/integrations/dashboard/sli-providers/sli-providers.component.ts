@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Service } from 'src/app/interfaces/service';
+import { Integration } from 'src/app/interfaces/service';
 import { IntegrationsJsonService } from 'src/app/services/integrations-json.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { IntegrationsJsonService } from 'src/app/services/integrations-json.serv
   styleUrls: ['./sli-providers.component.css']
 })
 export class SliProvidersComponent implements OnInit {
-  integrations: Service[] = [];
+  integrations: Integration[] = [];
   constructor(
     private jsonService: IntegrationsJsonService
   ) { }

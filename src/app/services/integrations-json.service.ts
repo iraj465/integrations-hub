@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import * as integrations_json from 'data/integrations.json'
-import { Service } from '../interfaces/service';
+import { Integration } from '../interfaces/service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class IntegrationsJsonService {
-  integrations: Service[] = (integrations_json  as  any).default as Service[];
+  integrations: Integration[] = (integrations_json  as  any).default as Integration[];
   constructor() { }
 
   public get_integrations_json() {

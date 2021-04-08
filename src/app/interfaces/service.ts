@@ -1,4 +1,4 @@
-export interface Service {
+export interface Integration {
     id:number;
     name:string;
     status: Status;
